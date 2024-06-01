@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="textporto.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">JH</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto justify-content-end"> 
+              <li class="nav-itemactive">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div class="myporto">
+        <h1>My Portofolio</h1>
+        <br>
+        <br>
+      </div>
+      <main>
+        <div class="container">
+          <div class="card-container row"> 
+          </div>
+        </div>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+          const data = [
+            {
+              "title": "POS-Restaurant",
+              "image": "Pos-Resto.png",
+              "description": "This is my project when I was at semester 2,This project is designed to help the restaurant point of sales process. I worked on this project for one semester and did it using the C# programming language. The application that I created has several features such as order features, menu features, table features and payment features.",
+              "github": "https://github.com/juanhubertl8010/POSRESTO"
+            },
+            {
+              "title": "SI Tuku Tempeh",
+              "image": "tempeh.png",
+              "description": "This is a project I worked on for System Analysis Design. I worked on this project in collaboration with UMKM Tuku Tempeh. Tuku Tempeh is an UMKM that focuses on selling tempeh chips packaged in various flavors. The features in the SI Tuku Tempeh project focus on sales transaction features, purchase transactions, and there are features for displaying sales and purchase reports",
+              "github": "https://github.com/juanhubertl8010/ALP-Tuku-Tempeh"
+            }
+          ];
+      
+          $(document).ready(function() {
+            var cardContainer = $(".card-container");
+
+            data.forEach(function(item, index) {
+              var card = $("<div>").addClass("card col-md-6"); 
+              var cardImg = $("<img>").addClass("card-img-top").addClass(index === 0 ? "pos-resto-img" : "").attr({ 
+                "src": item.image,
+                "alt": "Card image cap",
+              });
+              var cardBody = $("<div>").addClass("card-body");
+              var cardTitle = $("<h5>").addClass("card-title").text(item.title);
+              var cardText = $("<p>").addClass("card-text").text(item.description);
+              var githubButton = $("<a>").addClass("github-button").attr({ 
+                "href": item.github,
+                "target": "_blank"
+              }).text("Github");
+
+              cardBody.append(cardTitle, cardText, githubButton); 
+              card.append(cardImg, cardBody);
+              cardContainer.append(card);
+            });
+
+            const dropdownButton = $(".navbar-toggler");
+            const dropdownContent = $(".collapse.navbar-collapse");
+
+            dropdownButton.on("click", () => {
+              dropdownContent.toggleClass("show");
+              dropdownButton.toggleClass("collapsed");
+            });
+
+          });
+        </script>
+        <br>
+<footer>@2024 Juan Hubert Liem | All Right Reserved</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+    background: #101010;
+}
+
+  #navbarSupportedContent{
+    padding-left: 60rem ;
+ 
+}
+.navbar-brand
+{
+    padding-left: 5rem;
+    color:#0d9b6a;
+    font-weight: bold;
+}
+.container-fluid
+{
+    margin-bottom: 10px;
+    background: #101010;
+
+}
+.navbar-nav .nav-link {
+    color: white; 
+}
+.container {
+   
+    max-width: 750px; 
+}
+
+.card-container {
+    display: flex;
+
+}
+
+
+.left {
+    flex: 0 0 30%; 
+    background-color: #0d9b6a;
+    color: white;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 500px;
+}
+
+
+.right {
+    flex: 1; 
+    background-color: #fff; 
+}  
+.right-container{
+    color: #0d9b6a;
+    text-align: center;
+}
+.kata_awal {
+    color: #0d9b6a; 
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+#forms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    width: 120px; 
+    margin-left: 160px; 
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 130px); 
+    margin-left: 150px; 
+}
+button[type="submit"] {
+    margin-left: 170px;
+    background-color: #0d9b6a; 
+    color: #fff; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+.link:hover {
+    color: #000;
+}
+button[type="submit"]:hover {
+    background-color: #036442; 
+    color: #fff; 
+}
+footer{
+    color: #fff;
+    text-align: right;
+    margin-right: 40px;
+    
+      }
+      @media (max-width: 768px) {
+        #navbarSupportedContent {
+            padding-left: 20px; 
+        }
+    
+        .navbar-brand {
+            padding-left: 20px; 
+        }
+    
+        .container-fluid {
+            margin-bottom: 5px; 
+        }
+        
+        label {
+          margin-left: 50px; 
+          width: 100%; 
+          text-align: left; 
+        }
+      
+        input[type="text"],
+        textarea {
+          width: calc(100% - 20px); 
+          margin-left: 50px;
+        }
+      
+        button[type="submit"] {
+          margin-left: 100px; 
+          margin-right: auto;
+          display: block; 
+          width: 50%; 
+        }
+        footer{
+            margin-left: 120px;
+        }
+      }

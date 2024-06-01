@@ -1,0 +1,171 @@
+body {
+    background: #101010;
+}
+
+.container {
+    color: #FFFFFF; 
+}
+  #navbarSupportedContent{
+    padding-left: 60rem ;
+ 
+}
+.navbar-brand
+{
+    padding-left: 5rem;
+    color:#0d9b6a;
+    font-weight: bold;
+}
+.container-fluid
+{
+    margin-bottom: 10px;
+    background: #101010;
+
+}
+.navbar-nav .nav-link {
+    color: white; 
+}
+.About_Me h1{
+    color:#0d9b6a;
+    margin-left: 680px;
+}
+#Tulisan {
+    color: white; 
+    text-align: center; 
+}
+
+.frame1{
+    background-color:#101010 ;
+}
+.contact-info {
+    margin-top: 20px; 
+    
+}
+
+.contact-info p {
+    margin: 5px 0; 
+}
+
+.contact-info .label {
+    font-weight: bold; 
+    color:#0d9b6a;
+    vertical-align: top; 
+    
+}
+.contact-info .value {
+    vertical-align: top; 
+}
+.button_contactme button {
+    background-color: #0d9b6a; 
+    color: #fff; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 20px;
+    cursor: pointer; 
+    margin-left: 700px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.frame2 {
+    background-color: rgba(29, 28, 28, 0.529);
+}
+    
+      
+      .My_Skill {
+        margin-bottom: 20px;
+        color:white;
+        text-align: center;
+        margin-left: 30px;
+        font-weight: bold;
+      }
+      
+      .skills-container {
+        display: flex;
+        justify-content: center; 
+      }
+      
+      .left-skills,
+      .right-skills {
+        flex: 1;
+      }
+      
+      .skill {
+        margin-bottom: 10px;
+        color:#0d9b6a;
+        font-weight: bold;
+      }
+      
+      .skill-bar {
+        width: 50%;
+        background-color: #ddd;
+        height: 20px;
+        border-radius: 10px;
+      }
+      
+      .skill-level {
+        height: 100%;
+        background-color: #0d9b6a;
+        border-radius: 10px;
+      }
+      .left-skills{
+        margin-left: 550px;
+      }
+      .right-skills{
+        margin-right: 320px;
+      }
+      .footer{
+        color: #fff;
+        text-align: right;
+        margin-right: 40px;
+        margin-top: 10px;
+        padding-top: 20px;
+          }
+          .button_contactme button:hover {
+            background-color: #036442; 
+        }
+
+        @media screen and (max-width: 768px) {
+          .container {
+            padding-left: 2rem; 
+          }
+          
+          .container-fluid {
+            margin-bottom: 5px; 
+        }
+    
+          #navbarSupportedContent {
+            padding-left: 20px; 
+        }
+    
+        .navbar-brand {
+            padding-left: 20px; 
+        }
+    
+          .About_Me h1 {
+            margin-left: 5px;
+            text-align: center; 
+          }
+        
+          .contact-info {
+            margin-left: 0; 
+            text-align: center;
+          }
+        
+          .button_contactme button {
+            margin-left: 180px;
+            margin-right: 0; 
+            margin-bottom: 20px; 
+          }
+        
+          .left-skills,
+          .right-skills {
+            margin-left: 100px; 
+            margin-right: 0; 
+          }
+        
+          .footer {
+            margin-right: 0; 
+            margin-top: 0; 
+            text-align: center; 
+            margin-left: 150px;
+          }
+        }
